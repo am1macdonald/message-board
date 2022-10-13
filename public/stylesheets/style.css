@@ -3,6 +3,11 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */
