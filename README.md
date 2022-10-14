@@ -1,6 +1,8 @@
 # Message Board
 A simple message board built with Express and mongodDB
 
+[Live Preview](https://message-board-xi53.onrender.com/)
+
 ## Installation
 clone the repository and `run npm install`
 
