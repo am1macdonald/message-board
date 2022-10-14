@@ -5,18 +5,19 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <h2>Messages</h2>
-    <a href="/new">Add message</a>
-    <div>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p class="subtitle">Welcome to <%= title %></p>
+      <div class="inline-button">
+        <h2>Messages</h2>
+        <a class="clickable" href="/new">Add message</a>
+      </div>
       <ul>
         <% messages.forEach(message => { %>
 
         <li>
           <p><%= message.text %></p>
-          <span><%= message.user %></span>
-          <span><%= message.added %></span>
+          <span><%= message.user %>, on <%= message.added %> </span>
         </li>
 
         <% }) %>

@@ -1,16 +1,17 @@
 var express = require("express");
 var router = express.Router();
+const fns = require("date-fns");
 
 const messages = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date(),
+    added: fns.format(new Date(), "PPpp"),
   },
   {
     text: "Hello World!",
     user: "Charles",
-    added: new Date(),
+    added: fns.format(new Date(), "PPpp"),
   },
 ];
 
@@ -28,7 +29,7 @@ router.post("/new", function (req, res, next) {
   messages.push({
     text: req.body.message,
     user: req.body.name,
-    added: new Date(),
+    added: fns.format(new Date(), "PPpp"),
   });
   res.redirect("/");
 });
