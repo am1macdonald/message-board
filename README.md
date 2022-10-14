@@ -1,4 +1,4 @@
-# message-board
+# Message Board
 A simple message board built with Express and mongodDB
 
 ## Installation
